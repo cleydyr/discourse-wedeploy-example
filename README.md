@@ -1,6 +1,8 @@
 # Discourse
 An instance of [Discourse](www.discourse.org).
 
+The template used for this deployment is equivalent to the combination of the `postgres`, `redis` and `web` templates as contained on the discourse_docker repository. It means all applications needed to run a production environment of Discourse will be running inside that container.
+
 ## Configuration
 Change configurations by editing the Dockerfile.
 The only **required** configuration is the SMTP server, user and password, which will be used to send notifications and validate newly created accounts. It includes the admin account itself, so you should provide valid SMTP credentials in order to be able to validate the account of your example via email.
